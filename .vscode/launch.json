@@ -4,8 +4,7 @@
     {
         "name": ".NET Core Attach",
         "type": "coreclr",
-        "request": "attach",
-        "processId": "${command:pickProcess}"
+        "request": "attach"
     },
         {
             // Use IntelliSense to find out which attributes exist for C# debugging
@@ -23,7 +22,7 @@
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
-                "pattern": "\\\\bNow listening on:\\\\s+(https?://\\\\S+)"
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
